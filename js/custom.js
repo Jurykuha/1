@@ -1,5 +1,29 @@
 $(function(){
 
+	$('.menu__link').click(function(){
+		var scroll_el = $(this).attr('href');
+	    $('html, body').animate({scrollTop:$(scroll_el).position().top}, 1500);
+	});
+
+
+	// $("body").niceScroll({cursorcolor:"red"});
+
+	$("body").niceScroll({
+		cursorcolor:"#7e7e7e",
+		scrollspeed: 90,
+		cursoropacitymin: .9,
+		cursorwidth: "10px",
+		cursorborder: "none",
+		background: "#cdc8cd",
+		cursordragspeed: 1,
+		railpadding: { top: 1, right: 0, left: 0, bottom: 1 },
+		zindex: "999",
+		autohidemode: 'scroll',
+	});
+
+
+
+
 	$('.menu-toggle').click(function(){
 		$(this).toggleClass('active');
 		$('.menu').slideToggle(400);
