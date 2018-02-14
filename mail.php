@@ -5,13 +5,13 @@
 
 
 	$to = 'kukharev97@mail.ru';
-	$subject = "Заявка с сайта."
+	$subject = "Заявка с сайта.";
 	$message = '
 	Имя пользвателя: '.htmlspecialchars($username).'<br>
 	Email: '.htmlspecialchars($email).'<br>
 	Сообщение: '.htmlspecialchars($user_message);
 
-	$headers = "From: https://jurykuha.github.io/1/ <user@https://jurykuha.github.io/1/>\r\nContent-type: text/html; charset=UTF-8 \r\n";
+	$headers = "From: jurykuha.github.io/1/ <user@jurykuha.github.io/1/>\r\nContent-type: text/html; charset=UTF-8 \r\n";
 	mail ($to, $subject, $message, $headers);
 	header('Location: thanks.html');
 	exit();  
