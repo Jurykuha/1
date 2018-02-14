@@ -716,21 +716,21 @@
 					<div class="contact-wrap__left">
 						<h6>Drop Us A Message</h6>
 						<div class="contact-form">
-							<form action="#">
+							<form action="mail.php" method="POST">
 								<div class="form-field">
-									<input type="text" class="form-control" placeholder="Mike">
+									<input type="text" name="username" class="form-control" placeholder="Mike">
 									<span class="form-field__icon">
 										<span class="icon-user-1"></span>
 									</span>
 								</div>
 								<div class="form-field">
-									<input type="email" class="form-control" placeholder="Email">
+									<input type="email" name="email" class="form-control" placeholder="Email">
 									<span class="form-field__icon">
 										<span class="icon-mail"></span>
 									</span>
 								</div>
 								<div class="form-field">
-									<textarea class="form-control" placeholder="Message"></textarea>
+									<textarea name="user_message" class="form-control" placeholder="Message"></textarea>
 									<span class="form-field__icon">
 										<span class="icon-pen"></span>
 									</span>

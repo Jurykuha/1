@@ -1,12 +1,11 @@
 $(function(){
 
+
 	$('.menu__link').click(function(){
 		var scroll_el = $(this).attr('href');
 	    $('html, body').animate({scrollTop:$(scroll_el).position().top}, 1500);
 	});
 
-
-	// $("body").niceScroll({cursorcolor:"red"});
 
 	$("body").niceScroll({
 		cursorcolor:"#7e7e7e",
